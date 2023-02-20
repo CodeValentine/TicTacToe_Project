@@ -16,7 +16,7 @@ while playing:
     draw_board(spots)
     #If an invalid turn occurred, let the player know
     if prev_turn == turn:
-         print("Invalid spot selected, please pick another.")
+    print("Invalid spot selected, please pick another.")
     print("Player " + str((turn % 2) +1) + "'s turn: Pick your spot or press q to quit")
     #Get input from player
     choice = input()

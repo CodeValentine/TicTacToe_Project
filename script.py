@@ -16,9 +16,13 @@ while playing:
     choice = input()
     if choice == 'q':
         playing = False
-    
-    turn += 1
-    spots[int(choice)] = check_turn(turn)
+    #Check if the player gave a number from 1-9
+    elif str.isdigit(choice) and int(choice) in spots:
+        #Check if the spot has already been taken
+        if not spots[int(choice)] in {"X", "0"}:
+                #Valid input, update the board
+                turn += 1
+                spots[int(choice)] = check_turn(turn)
 
 
 

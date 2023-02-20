@@ -9,7 +9,6 @@ playing = True
 turn = 0
 prev_turn = -1
 
-
 while playing:
     #Reset the screen
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -17,6 +16,7 @@ while playing:
     #If an invalid turn occurred, let the player know
     if prev_turn == turn:
         print("Invalid spot selected, please pick another.")
+    prev_turn = turn 
     print("Player " + str((turn % 2) +1) + "'s turn: Pick your spot or press q to quit")
     #Get input from player
     choice = input()

@@ -1,3 +1,7 @@
 #Unit1 Project Codecademy, Computer Science Career Path
-board = "|1|2|3|\n|4|5|6|\n|7|8|9|"
-print(board)
+#import draw_board function from helpers
+from helpers import draw_board
+
+spots = {1 : '1', 2 : '2', 3 : '3', 4 : '4', 5 : '5', 6 : '6', 7 : '7', 8 : '8', 9 : '9'}
+
+draw_board()

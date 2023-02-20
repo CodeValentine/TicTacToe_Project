@@ -12,6 +12,7 @@ while playing:
     #Reset the screen
     os.system('cls' if os.name == 'nt' else 'clear')
     draw_board(spots)
+    print("Player " + str((turn % 2) +1) + "'s turn: Pick your spot or press q to quit")
     #Get input from player
     choice = input()
     if choice == 'q':
